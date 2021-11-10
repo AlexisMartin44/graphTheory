@@ -1,0 +1,4 @@
+<map id="CommandReloadWeight" name="CommandReloadWeight">
+<area shape="rect" id="node1" title="Command to reload the weights." alt="" coords="5,204,196,355"/>
+<area shape="rect" id="node2" href="$class_command.html" title="Virtual class used for each command." alt="" coords="17,5,185,156"/>
+</map>

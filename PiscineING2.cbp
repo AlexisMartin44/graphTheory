@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PiscineING2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PiscineING2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../PiscineING2" />
+					<Add directory="include" />
+					<Add directory="Menu" />
+				</Compiler>
+				<Linker>
+					<Add library="alleg44.dll" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PiscineING2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="../PiscineING2" />
+					<Add directory="include" />
+					<Add directory="Menu" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="alleg44.dll" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add library="alleg44.dll" />
+		</Linker>
+		<Unit filename="Arete.cpp" />
+		<Unit filename="Arete.h" />
+		<Unit filename="Constants.h" />
+		<Unit filename="Graph.cpp" />
+		<Unit filename="Graph.h" />
+		<Unit filename="GraphDrawer.cpp" />
+		<Unit filename="GraphDrawer.h" />
+		<Unit filename="GraphFlow.cpp" />
+		<Unit filename="GraphFlow.h" />
+		<Unit filename="GraphIndices.cpp" />
+		<Unit filename="GraphIndices.h" />
+		<Unit filename="IndicesWrapper.cpp" />
+		<Unit filename="IndicesWrapper.h" />
+		<Unit filename="Menu/Command.cpp" />
+		<Unit filename="Menu/Command.h" />
+		<Unit filename="Menu/CommandCalculateIndice.cpp" />
+		<Unit filename="Menu/CommandCalculateIndice.h" />
+		<Unit filename="Menu/CommandComparaison.cpp" />
+		<Unit filename="Menu/CommandComparaison.h" />
+		<Unit filename="Menu/CommandDeletingEdges.cpp" />
+		<Unit filename="Menu/CommandDeletingEdges.h" />
+		<Unit filename="Menu/CommandDraw.cpp" />
+		<Unit filename="Menu/CommandDraw.h" />
+		<Unit filename="Menu/CommandDrawIndice.cpp" />
+		<Unit filename="Menu/CommandDrawIndice.h" />
+		<Unit filename="Menu/CommandFlow.cpp" />
+		<Unit filename="Menu/CommandFlow.h" />
+		<Unit filename="Menu/CommandInfos.cpp" />
+		<Unit filename="Menu/CommandInfos.h" />
+		<Unit filename="Menu/CommandKConnexity.cpp" />
+		<Unit filename="Menu/CommandKConnexity.h" />
+		<Unit filename="Menu/CommandReload.cpp" />
+		<Unit filename="Menu/CommandReload.h" />
+		<Unit filename="Menu/CommandReloadWeight.cpp" />
+		<Unit filename="Menu/CommandReloadWeight.h" />
+		<Unit filename="Menu/CommandRestoreEdges.cpp" />
+		<Unit filename="Menu/CommandRestoreEdges.h" />
+		<Unit filename="Menu/CommandShortestPath.cpp" />
+		<Unit filename="Menu/CommandShortestPath.h" />
+		<Unit filename="Menu/Menu.cpp" />
+		<Unit filename="Menu/Menu.h" />
+		<Unit filename="Sommet.cpp" />
+		<Unit filename="Sommet.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="svgfile.cpp" />
+		<Unit filename="svgfile.h" />
+		<Unit filename="utility.cpp" />
+		<Unit filename="utility.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

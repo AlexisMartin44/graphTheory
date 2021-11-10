@@ -1,0 +1,4 @@
+<map id="CommandShortestPath" name="CommandShortestPath">
+<area shape="rect" id="node1" title="Command to display the shortest path from one Sommet to another." alt="" coords="5,204,192,355"/>
+<area shape="rect" id="node2" href="$class_command.html" title="Virtual class used for each command." alt="" coords="15,5,183,156"/>
+</map>

@@ -1,0 +1,10 @@
+star1	graphe_etoile1_topo.txt
+star3	graphe_etoile3_topo.txt
+cycle4	graphe_cycle4_topo.txt
+cycle5	graphe_cycle5_topo.txt graphe_cycle5_weights.txt
+test	test.txt
+metros	graph_metros.txt
+graph_wiki graph_wiki.txt
+new_york graph_new_york.txt
+real_star real_star.txt
+squares squares.txt

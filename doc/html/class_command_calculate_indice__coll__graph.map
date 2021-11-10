@@ -1,0 +1,4 @@
+<map id="CommandCalculateIndice" name="CommandCalculateIndice">
+<area shape="rect" id="node1" title="Command to calculate the indices." alt="" coords="5,204,205,355"/>
+<area shape="rect" id="node2" href="$class_command.html" title="Virtual class used for each command." alt="" coords="21,5,189,156"/>
+</map>

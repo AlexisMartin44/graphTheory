@@ -1,0 +1,4 @@
+<map id="CommandDeletingEdges" name="CommandDeletingEdges">
+<area shape="rect" id="node1" title="Command to delete some Arete." alt="" coords="5,204,200,355"/>
+<area shape="rect" id="node2" href="$class_command.html" title="Virtual class used for each command." alt="" coords="19,5,187,156"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="ExitApplication" name="ExitApplication">
+<area shape="rect" id="node1" title="Exits the application after displaying an error on the console." alt="" coords="598,31,706,56"/>
+<area shape="rect" id="node2" href="$class_graph.html#a3760f950a7849ae235cc917a8340ec58" title=" " alt="" coords="401,5,550,31"/>
+<area shape="rect" id="node6" href="$class_graph.html#addf6fbd5a435ce446e506749a5b15d1e" title=" " alt="" coords="404,55,547,80"/>
+<area shape="rect" id="node3" href="$class_menu.html#a748c59d87907f1a33285a8ecb89ee261" title=" " alt="" coords="104,29,209,55"/>
+<area shape="rect" id="node5" href="$class_graph.html#a5c7d27e794474a97d22e88d056fd2674" title=" " alt="" coords="257,29,353,55"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,29,56,55"/>
+</map>

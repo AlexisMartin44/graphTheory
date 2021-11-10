@@ -1,0 +1,4 @@
+<map id="CommandDrawIndice" name="CommandDrawIndice">
+<area shape="rect" id="node1" title="Command to draw the indices." alt="" coords="5,204,181,355"/>
+<area shape="rect" id="node2" href="$class_command.html" title="Virtual class used for each command." alt="" coords="9,5,177,156"/>
+</map>

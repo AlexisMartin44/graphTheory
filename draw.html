@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Draw graph</title>
+		<style>
+		#mainDiv
+		{
+			width: 1300px;
+			height: 950px;
+			background-image: url(ing2.png);
+			background-size: 1300px 950px;
+			position: relative;
+			cursor: crosshair;
+			display:inline-block;
+		}
+
+		.dot
+		{
+			width: 20px;
+			height: 20px;
+			margin: 0;
+			border-radius: 10px;
+			transform: translate(-50%, -50%);
+			position: absolute;
+		}
+		.red
+		{
+			background-color: red;
+		}
+		.green
+		{
+			background-color: green;
+		}
+		</style>
+	</head>
+	<body>
+		<div id="mainDiv"></div>
+		<label for="enableLinks"><input type="checkbox" id="enableLinks"/> Enable Links</label>
+		<label for="oriented"><input type="checkbox" id="oriented"/> Oriented</label>
+		<button id="generate">Generate</button>
+		<a id="download_link" download="ing2TD08.txt">download</a>
+
+		<script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+		<script>
+		const radius = 10;
+
+		var nodes = [];
+		var link = []
+		var last = -1;
+		var lastLink = -1;
+		var enableLinks = false;
+		var oriented = false;
+
+		$(function(){
+			var div = document.getElementById("c");
+			$('#enableLinks').change(() => {
+				enableLinks = $('#enableLinks').prop("checked");
+			});
+
+			$('#oriented').change(() => {
+				oriented = $('#oriented').prop("checked");
+			});
+
+			$('#mainDiv').click(e => {
+				e.preventDefault();
+				e.stopPropagation();
+				var x = e.originalEvent.layerX;
+				var y = e.originalEvent.layerY;
+				var i = -1;
+
+				nodes.push([x, y]);
+				last++;
+				var dot = $('<div class="dot green" id="dot' + last + '"></div>');
+				dot.css("left", x + "px");
+				dot.css("top", y + "px");
+				(function(d){
+					dot.click(e => {
+						e.preventDefault();
+						e.stopPropagation();
+						if(lastLink != d)
+						{
+							if(enableLinks)
+								link.push([lastLink, d]);
+							lastLink = d;
+							$('.green, #dot' + d).toggleClass("green red");
+						}
+					});
+				})(last);
+				$('.green').toggleClass("green red");
+				$('#mainDiv').append(dot);
+
+				if(last > 0)
+				{
+					if(enableLinks)
+						link.push([lastLink, last]);
+				}
+				lastLink = last;
+			});
+
+			$('#generate').click(() => {
+				var str = (oriented ? "1" : "0") + "\n";
+				str += nodes.length + "\n";
+				for (var n = 0; n < nodes.length; n++)
+				{
+					str += n + " " + name(n) + " " + nodes[n][0] + " " + nodes[n][1] + "\n";
+				}
+				str += link.length + "\n";
+				for (var n = 0; n < link.length; n++)
+				{
+					str += n + " " + link[n][0] + " " + link[n][1] + "\n";
+				}
+				console.log(str);
+				var data = new Blob([str], {type: 'text/plain'});
+
+				var url = window.URL.createObjectURL(data);
+
+				document.getElementById('download_link').href = url;
+			})
+		});
+
+		function name(i)
+		{
+			res = "";
+		    while(Math.floor(i / 26) != 0)
+		    {
+		        res += String.fromCharCode(Math.floor(i / 26) + 64);
+		        i %= 26;
+		    }
+		    res += String.fromCharCode(i + 65);
+		    return res;
+		}
+
+		function distance(a, b)
+		{
+			var x = a[0] - b[0], y = a[1] - b[1];
+			return Math.sqrt(x*x+y*y);
+		}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,5 @@
+Dataset pour les métros : https://data.iledefrance-mobilites.fr/explore/dataset/traces-du-reseau-ferre-idf/information/
+JSON filter : https://jsonformatter.org/json-reader
+Nombres d'arrêts par ligne : https://www.plandeparis.info/metro-de-paris/liste-des-stations.html
+Couleurs nodes : https://stackoverflow.com/questions/40629345/fill-array-dynamicly-with-gradient-color-c
+Calcul du rayon max : https://www.geeksforgeeks.org/closest-pair-of-points-using-divide-and-conquer-algorithm/

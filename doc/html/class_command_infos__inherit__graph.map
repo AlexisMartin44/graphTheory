@@ -1,0 +1,4 @@
+<map id="CommandInfos" name="CommandInfos">
+<area shape="rect" id="node1" title="Command to display the informations of the Graph." alt="" coords="5,204,173,355"/>
+<area shape="rect" id="node2" href="$class_command.html" title="Virtual class used for each command." alt="" coords="5,5,173,156"/>
+</map>
