@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Projet de seconde année. Le projet portait sur la théorie des graphes en C++.
+Second year project. The project was about graph theory in C++.
 
 The results can be found at [index.html](index.html).
 
